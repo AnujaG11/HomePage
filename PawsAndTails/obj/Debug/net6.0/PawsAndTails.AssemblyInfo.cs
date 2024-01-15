@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PawsAndTails")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f904318562ed50bd838862e2233e99828cbcd837")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7b5dd49a971f425d4f64228b09afe22dae500c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PawsAndTails")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PawsAndTails")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
