@@ -23,8 +23,17 @@ namespace HomePage.Controllers
         // GET: Carts
         public async Task<IActionResult> Index()
         {
+            List<Cart> cartList = new List<Cart>();
             var Context = _context.Carts.Include(c => c.IdNavigation);
-            return View(await Context.ToListAsync());
+            foreach(var item in Context)
+            {
+                if (item.EmailId == User.Identity.Name)
+                {
+                    cartList.Add(item);
+                }
+            }
+            //return View(await Context.ToListAsync());
+            return View(cartList);
         }
 
         // GET: Carts/Details/5

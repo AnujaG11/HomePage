@@ -11957,11 +11957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\PawsAndTails\\PawsAndTails\\PawsAndTails.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\GitRepo\\PawsAndTails\\PawsAndTails.csproj",
       "projectName": "PawsAndTails",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\PawsAndTails\\PawsAndTails\\PawsAndTails.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\GitRepo\\PawsAndTails\\PawsAndTails.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\PawsAndTails\\PawsAndTails\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\GitRepo\\PawsAndTails\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

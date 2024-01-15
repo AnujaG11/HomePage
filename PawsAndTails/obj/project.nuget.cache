@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RYzCxDQeQZE2kUJ3DYGZARR9btPwy2D7EUZNAK3lZdIpvKhz6PE/yRQaurNU6cKYKa8o4nzzEzRQTCqEDWfqjQ==",
+  "dgSpecHash": "Wk2Qp6vW6tGHJNPcFEvGy/3k0LH1Ur/5uz58WpQtivL4DD8xPPVgLRFn/1kF5MoBXRw4jZzRp/qjvy1J9M6ieQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\PawsAndTails\\PawsAndTails\\PawsAndTails.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\dotNET\\Code\\GitRepo\\PawsAndTails\\PawsAndTails.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

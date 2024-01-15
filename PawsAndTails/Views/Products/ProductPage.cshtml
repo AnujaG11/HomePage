@@ -1,6 +1,22 @@
-﻿@model IEnumerable<HomePage.Models.Product>
+﻿@using MySql.Data.MySqlClient
+@model IEnumerable<HomePage.Models.Product>
 
+    @{/*
+        <style>
+        div{
+    display: flex ;
+        }
+        button{
+        border-radius: 5px;
+        background-color : black;
+        width:20px;
+        height:20px;
+    color: white;
 
+            }
+    </style>
+    */
+}
 <table class="table">
     <thead>
         <tr>
@@ -29,7 +45,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Color)
             </th>
-            <th></th>
+            @{/*
+        <th>
+        Quantity
+                </th>
+                */
+            }
         </tr>
     </thead>
     <tbody>
@@ -59,7 +80,42 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Color)
+            </td> 
+            @{/*
+            <td>
+                @{int q=1;}
+                <div>
+                  <button onclick="Increment()" value="">+</button>
+                <p id="qty">@q</p>
+                <script>
+                    function Increment(){
+                        var qty = document.getElementById("qty").innerText;
+                        //console.log(qty);
+                        qty++;
+                        document.getElementById("qty").innerText = qty;
+
+                    }
+                    function Decrement(){
+                        var qty = document.getElementById("qty").innerText;
+                        //console.log(qty);
+                        if(qty>1)
+                            qty--;
+                        document.getElementById("qty").innerText = qty;
+                            @{
+                                ViewBag.qty = q;
+                            }
+                        console.log(@{ViewBag.qty = q;});
+                    }
+                </script>
+                <button onclick="Decrement()">-</button>
+                </div>
+
+                @{ViewBag.qty =q;}
+                <script>console.log(@ViewBag.qty)</script>
+ 
             </td>
+            */
+                }
             <td>
                     <a asp-action="AddToCart" asp-route-id="@item.Id">Add to Cart</a> 
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> 

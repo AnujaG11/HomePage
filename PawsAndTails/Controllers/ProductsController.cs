@@ -246,15 +246,16 @@ namespace HomePage.Controllers
             MySqlConnection cn = new MySqlConnection();
             cn.ConnectionString = @"server=localhost; port=3306; database=p_and_t; user=kshitij; password=xls; ";
             cn.Open();
-            string email = User.Identity.Name;
-            await Console.Out.WriteLineAsync("Test....................");
+            string? email = User.Identity.Name;
+            Console.WriteLine("Test....................");
+ 
+
             MySqlCommand cmd = cn.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = $"Insert into cart (email_id, quantity, Id) values ({email}, 2, 1)";
+            cmd.CommandText = $"Insert into cart (email_id, quantity, Id) values ('{email}', 1, 1)";
             cmd.ExecuteNonQuery();
             ViewBag.Message = "Passed";
             return RedirectToAction("Index", "Carts");
-        
         }
     }
 }
