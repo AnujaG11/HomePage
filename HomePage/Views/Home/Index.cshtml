@@ -1,0 +1,173 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Paws&Tails</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha384-YeUETxJrTH8WBShKFlBRQ6QmUj8H5f4yNl5k6ZSVLcW8AlHhq+5ddQ7PCgp5qXda" crossorigin="anonymous">
+    <!-- Your custom dark mode styles -->
+    <style>
+        body {
+            background-color: #343a40; /* Dark background color */
+            color: #ffffff; /* Light text color */
+        }
+
+        .carousel-inner {
+            height: 100vh;
+        }
+
+            .carousel-inner img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+
+        .shop-now-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #4CAF50; /* Green color */
+            color: #ffffff; /* White text color */
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 25px; /* Rounded corners */
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .card {
+            /*  max-width: 18rem;      Set the maximum width for the card */
+        
+        }
+            .card-body
+
+        {
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn-warning {
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid p-0">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1530728327726-b504480e42ec?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmlyZHMlMjBhbmltYXRlZHxlbnwwfDB8MHx8fDA%3D" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1518717566660-b58c85979458?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZ3MlMjBhbmltYXRlZHxlbnwwfDB8MHx8fDA%3Ds" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1677545183884-421157b2da02?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0cyUyMGFuaW1hdGVkfGVufDB8MHwwfHx8MA%3D%3D" class="d-block w-100" alt="Slide 3">
+                </div>
+
+                <!-- Shop Now Button -->
+                <button class="shop-now-button">Shop Now</button>
+            </div>
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8MXwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-warning">Shop Here!</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-warning">Shop Here!</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1585936529565-1871537209e3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-warning">Shop Here!</a>
+                    </div>
+                </div>
+            </div>
+
+                    
+            <div class="col">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-warning">Shop Here!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card bg-dark text-white">
+        <img src="https://media.licdn.com/dms/image/C4E12AQE4UcPdqOKAOA/article-cover_image-shrink_600_2000/0/1520157555462?e=2147483647&v=beta&t=YxOvMTR0-monhdZ9YyGp_sJwYKbqphBuZwZBfVSR88I" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">Last updated 3 mins ago</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="card bg-dark text-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/1024px-A_black_image.jpg" class="card-img" alt="..." style="max-width: 50%; margin: auto; display: block;">
+        <div class="card-img-overlay text-center">
+            <h5 class="card-title" style="font-size: 3rem; font-weight: bold;">PAWS AND TAILS</h5>
+            <p class="card-text" style="font-size: 2rem;">This is a PET SHOP, consider shopping with us. !!!</p>
+            <p class="card-text" style="font-size: 2.5rem;">SALE! SALE! SALE!</p>
+        </div>
+    </div>
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eFYbCBEEv6G8CvHDpH0OSgE0lH4SjNpQStaGxjA4Rg6R4MdLqDA4kzpxhU8eXVK" crossorigin="anonymous"></script>
+
+</body>
+</html>
